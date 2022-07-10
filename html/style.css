@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    top: 0;
+    font-family: 'Kanit', sans-serif;
+}
+
+body {
+    background: transparent;
+}
+
+.wrapper {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.main {
+    position: relative;
+    width: 40%;
+    height: 30%;
+    background-color: #202128;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 1vmin;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0 .8vmin;
+    box-sizing: border-box;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    flex-shrink: none;
+    overflow-y: hidden;
+    align-items: center;
+}
+
+.slot {
+    position: relative;
+    flex: 0 0 9vw;
+    height: 80%;
+    margin: 0 .5vmin;
+    overflow: hidden;
+    border-radius: .3vmin;
+}
+
+.slot .item {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #36394a;
+    transition: .15s linear;
+}
+
+.slot:hover .item {
+    animation: scaleUp .15s ease-in-out;
+    background: #191a20;
+    box-shadow: 0 0 0 .2vmin white inset;
+}
+
+.header-tag {
+    padding: 5px 10px;
+    background: rgba(17, 17, 17, 0.527);
+    width: 20%;
+    left: 40%;
+    border-radius: 5px;
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 33%;
+    font-size: 3.5vmin;
+}
+
+.img-weapon {
+    position: relative;
+    width: 100%;
+    height: 65%;
+}
+
+#name-tag {
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.button-submit {
+    cursor: pointer;
+    transition: .2s;
+    margin: 0 auto;
+    background-color: #1f5eff;
+    position: relative;
+    width: 90%;
+    border-radius: .5vmin;
+    color: #fff;
+    text-align: center;
+}
+
+.button-submit:hover {
+    background-color: #0a4df9;
+    color: #e6e6e6;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 0;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+.box-text-wel {
+    padding: 5px 10px;
+    background: rgba(17, 17, 17, 0.527);
+    border-radius: 5px;
+    color: white;
+    z-index: 1;
+    position: absolute;
+    transform: translate(-50%, -50%) !important;
+    top: 5%;
+    left: 50%;
+    font-size: 2vmin;
+    width: 10%;
+}
+
+.notify {
+    z-index: 1;
+    position: absolute;
+    transform: translate(-50%, -50%) !important;
+    top: 70%;
+    left: 50%;
+    font-size: 2.5vmin;
+    color: #ffffff;
+    background: rgba(15, 14, 14, 0.712);
+    width: 10%;
+}
+
+.notify-text{
+    padding: 5px 10px;
+    background: rgba(17, 17, 17, 0.527);
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+}
+
+.presskey {
+    /* position: absolute; */
+    position: relative;
+    width: 10%;
+    text-align: center;
+    color: gold;
+}
+
+.text-header {
+    text-align: center;
+}
+
+#price-tag {
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gold;
+}
